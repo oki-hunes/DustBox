@@ -353,7 +353,7 @@
         "UseSystemSearchPath" = "11:TRUE"
         "TargetPlatform" = "3:1"
         "PreBuildEvent" = "8:"
-        "PostBuildEvent" = "8:"
+        "PostBuildEvent" = "8:powershell.exe -NoProfile -ExecutionPolicy Bypass -File \"$(ProjectDir)PatchInstallerMsi.ps1\" \"$(BuiltOuputPath)\""
         "RunPostBuildEvent" = "3:0"
         }
         "Registry"
@@ -461,7 +461,7 @@
             "Target" = "8:_0839AACF138E4223BF62148057834140"
             "Folder" = "8:_BA6EC25A2BCD49E3887B0B5C7BA832B9"
             "WorkingFolder" = "8:_907B769CD4934FFDA025293D5096EFC9"
-            "Icon" = "8:_C9B4F7E75D8E4AB9BC933D2B6220D9A6"
+            "Icon" = "8:"
             "Feature" = "8:"
             }
         }
